@@ -292,13 +292,20 @@ namespace RussianRadioMod
 
         private static AudioClip[] GetOrLoadClips(string folderName, string messageId, Dictionary<string, AudioClip[]> cache)
         {
+            // Кэш хранит и отрицательный результат (null): без этого движок
+            // сканировал бы диск заново для каждого несуществующего id
+            // при каждом вызове ApplyPatches (раз в 60 кадров).
             if (cache.TryGetValue(messageId, out var existing))
             {
                 return existing;
             }
 
             string folder = Path.Combine(baseDir, folderName);
-            if (!Directory.Exists(folder)) return null;
+            if (!Directory.Exists(folder))
+            {
+                cache[messageId] = null;
+                return null;
+            }
 
             string[] files = Directory.GetFiles(folder, messageId + "_*.wav");
             if (files.Length == 0)
@@ -306,19 +313,64 @@ namespace RussianRadioMod
                 files = Directory.GetFiles(folder, messageId + ".wav");
             }
 
-            if (files.Length == 0) return null;
+            if (files.Length == 0)
+            {
+                // Запасной путь: сопоставление без учёта регистра —
+                // разные сборки игры пишут id то camelCase, то в нижнем регистре.
+                List<string> matches = new List<string>();
+                foreach (var f in Directory.GetFiles(folder, "*.wav"))
+                {
+                    string stem = Path.GetFileNameWithoutExtension(f);
+                    int underscore = stem.LastIndexOf('_');
+                    string baseName = underscore > 0 ? stem.Substring(0, underscore) : stem;
+                    if (string.Equals(baseName, messageId, StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(stem, messageId, StringComparison.OrdinalIgnoreCase))
+                    {
+                        matches.Add(f);
+                    }
+                }
+                files = matches.ToArray();
+            }
+
+            if (files.Length == 0)
+            {
+                cache[messageId] = null;
+                return null;
+            }
+
+            // Стабильный порядок дублей: _1, _2, _10 (а не лексикографически).
+            Array.Sort(files, CompareByTrailingIndex);
 
             List<AudioClip> clips = new List<AudioClip>();
             for (int i = 0; i < files.Length; i++)
             {
-                string clipName = $"ru_{folderName}_{messageId}_{i+1}";
+                string clipName = $"ru_{folderName}_{messageId}_{i + 1}";
                 AudioClip c = LoadWav(files[i], clipName);
                 if (c != null) clips.Add(c);
             }
 
-            AudioClip[] res = clips.ToArray();
+            AudioClip[] res = clips.Count > 0 ? clips.ToArray() : null;
             cache[messageId] = res;
             return res;
+        }
+
+        private static int CompareByTrailingIndex(string a, string b)
+        {
+            int ia = TrailingIndexOf(a);
+            int ib = TrailingIndexOf(b);
+            if (ia != ib) return ia.CompareTo(ib);
+            return string.Compare(a, b, StringComparison.OrdinalIgnoreCase);
+        }
+
+        private static int TrailingIndexOf(string path)
+        {
+            string stem = Path.GetFileNameWithoutExtension(path);
+            int u = stem.LastIndexOf('_');
+            if (u >= 0 && u < stem.Length - 1 && int.TryParse(stem.Substring(u + 1), out int n))
+            {
+                return n;
+            }
+            return 0;
         }
 
         public static void OnSetDialogueAudio(CallWindow window, ConversationElement ce)
@@ -364,6 +416,10 @@ namespace RussianRadioMod
             string file = Path.Combine(callsBaseDir, callId, optionId + ".wav");
             if (!File.Exists(file))
             {
+                // Отрицательный результат тоже кэшируем: диалоговое окно
+                // дёргает этот метод на каждую реплику, а без озвучки
+                // остаются только вызовы вне русской локализации.
+                callsCache[key] = null;
                 return null;
             }
 
