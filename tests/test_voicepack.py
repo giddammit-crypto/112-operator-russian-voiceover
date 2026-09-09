@@ -19,6 +19,7 @@ import wave
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from voicepack import dsp, fx  # noqa: E402
+from voicepack.acting import perform_call_text  # noqa: E402
 from voicepack.build_calls import load_localization, parse_calls  # noqa: E402
 from voicepack.casting import RADIO_CAST, alt_of, caller_profile  # noqa: E402
 from voicepack.emotions import from_text, from_xml_tag, get  # noqa: E402
@@ -109,6 +110,18 @@ class TestTextNorm(unittest.TestCase):
 
     def test_acronyms(self):
         self.assertIn("дэ-тэ-пэ", normalize_for_speech("Оформляем ДТП"))
+
+
+class TestActing(unittest.TestCase):
+
+    def test_distressed_call_gets_actor_marks(self):
+        out = perform_call_text("Мне больно, я не могу встать!", "pain", 1)
+        self.assertRegex(out.lower(), r"(ах|ох|ух|\.\.\.|…)")
+
+    def test_operator_stays_professional(self):
+        out = perform_call_text("Что случилось?", "calm", 1, is_operator=True)
+        self.assertEqual(out, "Что у вас произошло?")
+        self.assertNotIn("ох", out.lower())
 
 
 class TestEmotions(unittest.TestCase):
@@ -355,6 +368,15 @@ class TestEndToEnd(unittest.TestCase):
         with open(os.path.join(self.out, "russian_radio_manifest.json"), "w",
                   encoding="utf-8") as f:
             json.dump({"count": 1, "backend": "stub"}, f)
+        self.assertTrue(verify_pack(self.out))
+
+    def test_verify_calls_only_passes(self):
+        from voicepack.build_calls import build_calls
+        from voicepack.verify import verify_pack
+        m = build_calls(self.out, "stub", self.sa, jobs=1, progress=lambda *a: None)
+        with open(os.path.join(self.out, "russian_calls_manifest.json"), "w",
+                  encoding="utf-8") as f:
+            json.dump(m, f)
         self.assertTrue(verify_pack(self.out))
 
     def test_install_layout(self):

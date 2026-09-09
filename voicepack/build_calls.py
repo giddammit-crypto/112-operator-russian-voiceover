@@ -22,6 +22,7 @@
 from __future__ import annotations
 
 import glob
+import hashlib
 import json
 import os
 import re
@@ -29,8 +30,9 @@ import time
 import xml.etree.ElementTree as ET
 
 from . import dsp
+from .acting import perform_call_text
 from .casting import OPERATOR_PROFILE, OPERATOR_FEMALE_PROFILE, caller_profile
-from .emotions import from_text, from_xml_tag
+from .emotions import from_text, from_xml_tag, get as get_emotion
 from .parallel import default_jobs, get_backend, run_tasks
 from .render import render_hangup, render_line, render_silence_clip
 from .text_norm import normalize_for_speech, split_screen_tag
@@ -77,12 +79,55 @@ AMBIENCE_HINTS = (
 )
 
 
-def _ambience_for(call_id: str) -> str:
-    low = call_id.lower()
+def _ambience_for(call_id: str, text: str = "") -> str:
+    """Прикинуть акустику места: сначала по id вызова, затем по самой реплике."""
+    low = f"{call_id} {text}".lower()
+    ru_hints = (
+        (("авар", "дтп", "машин", "дорог", "трасс", "водител", "салон"), "car"),
+        (("улиц", "двор", "парк", "подъезд", "стреля", "дерут", "граб"), "street"),
+        (("пожар", "горит", "дым", "задыха", "огонь"), "street"),
+        (("толп", "магазин", "торгов", "концерт", "стадион", "бар", "клуб"), "crowd"),
+        (("квартир", "дом", "кухн", "ванн", "комнат", "сосед"), "indoor"),
+    )
+    for needles, kind in ru_hints:
+        if any(n in low for n in needles):
+            return kind
     for needles, kind in AMBIENCE_HINTS:
         if any(n in low for n in needles):
             return kind
     return "indoor"
+
+
+def _stable_seed(*parts: str) -> int:
+    data = "\0".join(str(p) for p in parts).encode("utf-8", "ignore")
+    return int.from_bytes(hashlib.sha1(data).digest()[:4], "big")
+
+
+def _detect_sex(attrs_text: str, default: str = "MALE") -> str:
+    up = attrs_text.upper()
+    if re.search(r"\b(FEMALE|WOMAN|GIRL|SEX\s*=\s*FEMALE|GENDER\s*=\s*F)\b", up):
+        return "FEMALE"
+    if re.search(r"\b(MALE|MAN|BOY|SEX\s*=\s*MALE|GENDER\s*=\s*M)\b", up):
+        return "MALE"
+    return default
+
+
+def _is_operator_option(opt: ET.Element) -> bool:
+    """XML разных версий игры по-разному называет говорящего."""
+    attrs = {str(k).lower(): str(v).lower() for k, v in opt.attrib.items()}
+    joined = " ".join(f"{k}={v}" for k, v in attrs.items())
+
+    for key in ("operator", "dispatcher", "isoperator", "is_operator"):
+        if attrs.get(key) in ("true", "1", "yes", "operator", "dispatcher"):
+            return True
+    speaker = " ".join(attrs.get(k, "") for k in ("speaker", "from", "who", "character", "actor", "role", "side", "person"))
+    if any(w in speaker for w in ("operator", "dispatcher", "dyspozytor", "112")):
+        return True
+    if any(w in speaker for w in ("caller", "victim", "witness", "suspect", "civilian")):
+        return False
+    if any(w in joined for w in ("caller", "victim", "witness", "suspect", "civilian")):
+        return False
+    return False
 
 
 def parse_calls(streaming_assets: str) -> dict:
@@ -100,12 +145,10 @@ def parse_calls(streaming_assets: str) -> dict:
 
         sex = "MALE"
         for el in root.iter():
-            props = (el.get("properties") or "") + " " + (el.get("person") or "")
-            if "sex=FEMALE" in props or "FEMALE" in props.upper():
-                sex = "FEMALE"
-                break
-            if "sex=MALE" in props:
-                sex = "MALE"
+            attrs_text = " ".join(f"{k}={v}" for k, v in el.attrib.items())
+            new_sex = _detect_sex(attrs_text, sex)
+            if new_sex != sex:
+                sex = new_sex
                 break
 
         options = {}
@@ -113,18 +156,11 @@ def parse_calls(streaming_assets: str) -> dict:
             opt_id = opt.get("id")
             if not opt_id:
                 continue
-            who = ((opt.get("operator") or "") + " " + (opt.get("person") or "")).lower()
-            is_operator = ("operator" in who or "dispatcher" in who
-                           or (opt.get("operator") or "").strip().lower() in ("true", "1", "yes"))
-            opt_sex = sex
-            props = (opt.get("properties") or "").upper()
-            if "SEX=FEMALE" in props:
-                opt_sex = "FEMALE"
-            elif "SEX=MALE" in props:
-                opt_sex = "MALE"
+            is_operator = _is_operator_option(opt)
+            opt_sex = _detect_sex(" ".join(f"{k}={v}" for k, v in opt.attrib.items()), sex)
             options[opt_id] = {
                 "is_operator": is_operator,
-                "emotions": opt.get("emotions") or "",
+                "emotions": opt.get("emotions") or opt.get("emotion") or opt.get("mood") or "",
                 "sex": opt_sex,
             }
 
@@ -164,8 +200,14 @@ def _worker(task: dict) -> dict:
                else caller_profile(task["sex"], task["caller_index"]))
     mode = "headset" if is_op else "phone"
 
-    raw = tts.synth(task["text"], profile.tts_voice, rate=profile.rate,
-                    pitch_semitones=profile.pitch_semitones)
+    # Интонацию закладываем уже на этапе TTS: эмоция меняет темп, высоту и,
+    # для движков с поддержкой стилей, экспрессию. DSP-слой ниже добавит
+    # дрожь, дыхание, телефонный тракт и акустику сцены.
+    em = get_emotion(task["emotion"])
+    raw = tts.synth(task["text"], profile.tts_voice,
+                    rate=profile.rate * em.rate,
+                    pitch_semitones=profile.pitch_semitones + em.pitch,
+                    style=em.style, style_degree=em.style_degree)
     clip = render_line(raw, profile, task["emotion"], task["seed"], mode=mode,
                        ambience=None if is_op else task["ambience"])
     dsp.write_wav(out_path, clip)
@@ -216,7 +258,7 @@ def build_calls(out_root: str, backend_name: str, streaming_assets: str,
             is_op = om["is_operator"]
             screen_tag, spoken = split_screen_tag(texts[key])
             spoken = normalize_for_speech(spoken)
-            seed = abs(hash((call_id, opt_id))) % (2 ** 31)
+            seed = _stable_seed(call_id, opt_id)
 
             if not spoken or not re.search(r"[A-Za-zА-Яа-яЁё0-9]", spoken):
                 kind = ("hangup" if any(h in opt_id.lower() for h in HANGUP_HINTS)
@@ -229,13 +271,15 @@ def build_calls(out_root: str, backend_name: str, streaming_assets: str,
             emotion = "calm" if is_op else from_xml_tag(om.get("emotions", ""))
             if not is_op and emotion == "neutral":
                 emotion = from_text(spoken)
+            spoken = perform_call_text(spoken, emotion, seed, is_operator=is_op)
+            ambience = _ambience_for(call_id, spoken) if not is_op else meta["ambience"]
 
             tasks.append({
                 "kind": "operator" if is_op else "caller",
                 "call": call_id, "option": opt_id, "path": out_path,
                 "text": spoken, "screen_tag": screen_tag, "emotion": emotion,
                 "sex": om.get("sex", meta["sex"]), "caller_index": ci,
-                "ambience": meta["ambience"], "operator_profile": op_profile,
+                "ambience": ambience, "operator_profile": op_profile,
                 "seed": seed, "backend": backend_name,
             })
 
