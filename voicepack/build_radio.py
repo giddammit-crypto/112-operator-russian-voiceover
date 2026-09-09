@@ -100,7 +100,7 @@ def build_radio(out_root: str, backend_name: str, only_role: str | None = None,
                     "seed": _seed(category, role, idx, text),
                 })
 
-    if not only_role or only_role == "Chatter":
+    if (not only_role or only_role == "Chatter") and (not only_category or only_category == "chatter"):
         chatter_dir = os.path.join(radio_root, "Chatter")
         for idx, (text, emotion) in enumerate(CHATTER, start=1):
             tasks.append({

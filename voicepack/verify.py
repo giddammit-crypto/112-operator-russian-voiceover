@@ -81,8 +81,13 @@ def verify_pack(out_root: str, game_dir: str | None = None) -> bool:
         for role in ROLES:
             d = os.path.join(radio_root, role)
             if not os.path.isdir(d):
-                problems.append(f"Нет папки роли: {role}")
-                print(f"   [!] {role}: папка отсутствует")
+                # Chatter — необязательный фоновый эфир; остальные роли обязательны
+                if role == "Chatter":
+                    warnings.append("Нет папки роли: Chatter (фоновый эфир не собран)")
+                    print(f"   [~] {role}: папка отсутствует")
+                else:
+                    problems.append(f"Нет папки роли: {role}")
+                    print(f"   [!] {role}: папка отсутствует")
                 continue
             files = sorted(f for f in os.listdir(d) if f.endswith(".wav"))
             stats = [s for s in (_scan_wav(os.path.join(d, f)) for f in files) if s]
