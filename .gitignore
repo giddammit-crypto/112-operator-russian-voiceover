@@ -1,0 +1,27 @@
+# Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Build outputs
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Temporary audio files
+temp_*/
+temp_call_mp3/
+temp_radio_mp3/
+extracted_samples/
+audio_test/
+cinema_test/
+*.mp3
+test_*
+*.log
+*.original
+
+# User settings
+*.user
+.idea/
+.vscode/

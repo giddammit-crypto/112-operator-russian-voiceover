@@ -1,0 +1,3152 @@
+[
+  {
+    "path_id": 215,
+    "name": "rvoice_officerdown_1",
+    "duration": 1.06,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 216,
+    "name": "rvoice_chatter_26",
+    "duration": 6.58,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 217,
+    "name": "rvoice_cant_inj_1",
+    "duration": 2.98,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 218,
+    "name": "rvoice_go_4",
+    "duration": 0.78,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 219,
+    "name": "rvoice_choose_3",
+    "duration": 1.37,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 220,
+    "name": "rvoice_patrol_2",
+    "duration": 1.72,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 221,
+    "name": "rvoice_stuck_3",
+    "duration": 1.74,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 222,
+    "name": "rvoice_stuck_3",
+    "duration": 1.84,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 223,
+    "name": "rvoice_deploy_start2",
+    "duration": 1.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 224,
+    "name": "rvoice_cancelled_1",
+    "duration": 1.47,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 225,
+    "name": "rvoice_search_solved_2",
+    "duration": 1.74,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 226,
+    "name": "rvoice_rtb_3",
+    "duration": 1.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 227,
+    "name": "rvoice_wtf_1",
+    "duration": 1.96,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 228,
+    "name": "rvoice_stuck_3",
+    "duration": 1.86,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 229,
+    "name": "rvoice_attacked_3",
+    "duration": 2.9,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 230,
+    "name": "rvoice_polreq_1",
+    "duration": 1.94,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 231,
+    "name": "rvoice_attacked_1",
+    "duration": 2.7,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 232,
+    "name": "rvoice_attacked_2",
+    "duration": 2.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 233,
+    "name": "rvoice_search_sector_2",
+    "duration": 1.56,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 234,
+    "name": "rvoice_chatter_2",
+    "duration": 2.19,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 235,
+    "name": "rvoice_escape_1",
+    "duration": 2.59,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 236,
+    "name": "rvoice_unit_lost_3",
+    "duration": 1.19,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 237,
+    "name": "rvoice_medreq_1",
+    "duration": 1.36,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 238,
+    "name": "rvoice_chatter_33",
+    "duration": 5.23,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 239,
+    "name": "rvoice_unit_lost_2",
+    "duration": 1.29,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 240,
+    "name": "rvoice_escape_1",
+    "duration": 2.36,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 241,
+    "name": "rvoice_resolved_1",
+    "duration": 1.12,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 242,
+    "name": "rvoice_choose_3",
+    "duration": 1.38,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 243,
+    "name": "rvoice_cant_inj_3",
+    "duration": 2.27,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 244,
+    "name": "rvoice_underfire_1",
+    "duration": 2.66,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 245,
+    "name": "rvoice_deploy_firestation",
+    "duration": 1.51,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 246,
+    "name": "rvoice_doctorneeded_3",
+    "duration": 2.41,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 247,
+    "name": "rvoice_chase_start_2",
+    "duration": 1.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 248,
+    "name": "rvoice_patrol_2",
+    "duration": 1.39,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 249,
+    "name": "rvoice_chatter_18",
+    "duration": 1.87,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 250,
+    "name": "rvoice_underfire_2",
+    "duration": 1.76,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 251,
+    "name": "rvoice_wtf_2",
+    "duration": 1.51,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 252,
+    "name": "rvoice_underfire_2",
+    "duration": 1.7,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 253,
+    "name": "rvoice_chatter_28",
+    "duration": 5.42,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 254,
+    "name": "rvoice_polreq_2",
+    "duration": 1.62,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 255,
+    "name": "rvoice_chatter_11",
+    "duration": 2.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 256,
+    "name": "rvoice_firereq_1",
+    "duration": 1.79,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 257,
+    "name": "rvoice_fire_cont_2",
+    "duration": 2.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 258,
+    "name": "rvoice_medtransport_2",
+    "duration": 1.37,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 259,
+    "name": "rvoice_choose_5",
+    "duration": 0.9,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 260,
+    "name": "rvoice_officerdown_3",
+    "duration": 1.62,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 261,
+    "name": "rvoice_unable_2",
+    "duration": 1.9,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 262,
+    "name": "rvoice_chatter_7",
+    "duration": 2.3,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 263,
+    "name": "rvoice_chatter_29",
+    "duration": 2.85,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 264,
+    "name": "rvoice_chase_start_2",
+    "duration": 1.66,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 265,
+    "name": "rvoice_chatter_14",
+    "duration": 2.21,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 266,
+    "name": "rvoice_firereq_2",
+    "duration": 1.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 267,
+    "name": "rvoice_escape_3",
+    "duration": 1.44,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 268,
+    "name": "rvoice_go_2",
+    "duration": 1.55,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 269,
+    "name": "rvoice_choose_4",
+    "duration": 0.99,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 270,
+    "name": "rvoice_chatter_15",
+    "duration": 3.23,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 271,
+    "name": "rvoice_medtranreq_2",
+    "duration": 1.76,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 272,
+    "name": "rvoice_poltransreq_2",
+    "duration": 1.94,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 273,
+    "name": "rvoice_go_1",
+    "duration": 1.35,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 274,
+    "name": "rvoice_toomany_3",
+    "duration": 1.67,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 275,
+    "name": "rvoice_attacked_3",
+    "duration": 3.0,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 276,
+    "name": "rvoice_officerdown_2",
+    "duration": 1.91,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 277,
+    "name": "rvoice_poltransreq_2",
+    "duration": 2.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 278,
+    "name": "rvoice_chatter_23",
+    "duration": 2.14,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 279,
+    "name": "rvoice_patrol_3",
+    "duration": 1.11,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 280,
+    "name": "rvoice_patrol_1",
+    "duration": 1.91,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 281,
+    "name": "rvoice_poltransreq_3",
+    "duration": 1.62,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 282,
+    "name": "rvoice_go_1",
+    "duration": 1.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 283,
+    "name": "rvoice_callall_2",
+    "duration": 2.16,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 284,
+    "name": "rvoice_callall_1",
+    "duration": 2.66,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 285,
+    "name": "rvoice_doctorneeded_2",
+    "duration": 2.27,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 286,
+    "name": "rvoice_chase_start_3",
+    "duration": 1.22,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 287,
+    "name": "rvoice_medtransport_1",
+    "duration": 1.43,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 288,
+    "name": "rvoice_cant_inj_2",
+    "duration": 2.77,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 289,
+    "name": "rvoice_medtranreq_2",
+    "duration": 1.77,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 290,
+    "name": "rvoice_search_sector_3",
+    "duration": 1.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 291,
+    "name": "rvoice_cancelled_2",
+    "duration": 1.43,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 292,
+    "name": "rvoice_go_1",
+    "duration": 1.33,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 293,
+    "name": "rvoice_patrol_2",
+    "duration": 1.64,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 294,
+    "name": "rvoice_go_2",
+    "duration": 1.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 295,
+    "name": "rvoice_firereq_2",
+    "duration": 1.46,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 296,
+    "name": "rvoice_medreq_1",
+    "duration": 1.67,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 297,
+    "name": "rvoice_chase_start_1",
+    "duration": 1.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 298,
+    "name": "rvoice_rtb_2",
+    "duration": 1.72,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 299,
+    "name": "rvoice_stuck_3",
+    "duration": 1.83,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 300,
+    "name": "rvoice_unable_2",
+    "duration": 1.97,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 301,
+    "name": "rvoice_underfire_1",
+    "duration": 3.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 302,
+    "name": "rvoice_rtb_2",
+    "duration": 1.47,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 303,
+    "name": "rvoice_chatter_22",
+    "duration": 5.08,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 304,
+    "name": "rvoice_medtranreq_3",
+    "duration": 2.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 305,
+    "name": "rvoice_chatter_25",
+    "duration": 2.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 306,
+    "name": "rvoice_officerdown_3",
+    "duration": 1.81,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 307,
+    "name": "rvoice_medreq_2",
+    "duration": 2.06,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 308,
+    "name": "rvoice_weather_1",
+    "duration": 1.9,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 309,
+    "name": "rvoice_patrol_1",
+    "duration": 1.11,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 310,
+    "name": "rvoice_go_3",
+    "duration": 1.23,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 311,
+    "name": "rvoice_firereq_3",
+    "duration": 2.01,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 312,
+    "name": "rvoice_unable_4",
+    "duration": 1.66,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 313,
+    "name": "rvoice_attacked_1",
+    "duration": 2.66,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 314,
+    "name": "rvoice_poltransreq_2",
+    "duration": 1.67,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 315,
+    "name": "rvoice_chase_start_2",
+    "duration": 1.19,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 316,
+    "name": "rvoice_fire_cont_1",
+    "duration": 1.37,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 317,
+    "name": "rvoice_outofwater_1",
+    "duration": 1.42,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 318,
+    "name": "rvoice_poltransreq_3",
+    "duration": 1.49,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 319,
+    "name": "rvoice_underfire_4",
+    "duration": 1.39,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 320,
+    "name": "rvoice_doctorneeded_1",
+    "duration": 1.84,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 321,
+    "name": "rvoice_chase_start_3",
+    "duration": 1.09,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 322,
+    "name": "rvoice_resolved_1",
+    "duration": 1.15,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 323,
+    "name": "rvoice_cant_inj_3",
+    "duration": 1.9,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 324,
+    "name": "rvoice_unable_1",
+    "duration": 0.76,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 325,
+    "name": "rvoice_stuck_1",
+    "duration": 1.65,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 326,
+    "name": "rvoice_go_2",
+    "duration": 1.34,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 327,
+    "name": "rvoice_wtf_2",
+    "duration": 1.43,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 328,
+    "name": "rvoice_choose_3",
+    "duration": 1.46,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 329,
+    "name": "rvoice_unable_4",
+    "duration": 1.88,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 330,
+    "name": "Explosion4",
+    "duration": 5.74,
+    "freq": 48000,
+    "channels": 2
+  },
+  {
+    "path_id": 331,
+    "name": "rvoice_rtb_2",
+    "duration": 2.04,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 332,
+    "name": "rvoice_chatter_12",
+    "duration": 3.69,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 333,
+    "name": "rvoice_weather_1",
+    "duration": 1.94,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 334,
+    "name": "rvoice_weather_4",
+    "duration": 2.02,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 335,
+    "name": "rvoice_search_solved_1",
+    "duration": 1.7,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 336,
+    "name": "rvoice_opneedhelp_3",
+    "duration": 2.18,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 337,
+    "name": "rvoice_medreq_3",
+    "duration": 2.14,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 338,
+    "name": "rvoice_wtf_3",
+    "duration": 1.69,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 339,
+    "name": "rvoice_attacked_1",
+    "duration": 2.7,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 340,
+    "name": "rvoice_resolved_4",
+    "duration": 1.05,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 341,
+    "name": "rvoice_resolved_4",
+    "duration": 1.35,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 342,
+    "name": "rvoice_toomany_1",
+    "duration": 2.08,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 343,
+    "name": "rvoice_chatter_19",
+    "duration": 2.82,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 344,
+    "name": "rvoice_outofwater_2",
+    "duration": 1.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 345,
+    "name": "rvoice_chatter_1",
+    "duration": 2.48,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 346,
+    "name": "rvoice_firereq_2",
+    "duration": 1.34,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 347,
+    "name": "rvoice_attacked_3",
+    "duration": 2.66,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 348,
+    "name": "rvoice_choose_4",
+    "duration": 0.87,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 349,
+    "name": "rvoice_poltransreq_1",
+    "duration": 2.61,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 350,
+    "name": "rvoice_firereq_2",
+    "duration": 1.31,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 351,
+    "name": "rvoice_attacked_2",
+    "duration": 2.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 352,
+    "name": "rvoice_outofwater_2",
+    "duration": 1.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 353,
+    "name": "rvoice_reinf_3",
+    "duration": 2.65,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 354,
+    "name": "rvoice_toomany_3",
+    "duration": 1.92,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 355,
+    "name": "rvoice_unable_1",
+    "duration": 0.85,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 356,
+    "name": "rvoice_chase_start_2",
+    "duration": 1.4,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 357,
+    "name": "rvoice_stuck_2",
+    "duration": 2.05,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 358,
+    "name": "rvoice_polreq_3",
+    "duration": 1.95,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 359,
+    "name": "rvoice_choose_3",
+    "duration": 1.23,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 360,
+    "name": "rvoice_cancelled_3",
+    "duration": 1.11,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 361,
+    "name": "rvoice_search_sector_2",
+    "duration": 1.56,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 362,
+    "name": "rvoice_cancelled_3",
+    "duration": 1.25,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 363,
+    "name": "rvoice_outofwater_3",
+    "duration": 1.59,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 364,
+    "name": "rvoice_medtransport_3",
+    "duration": 1.34,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 365,
+    "name": "rvoice_stuck_2",
+    "duration": 2.08,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 366,
+    "name": "rvoice_medtranreq_2",
+    "duration": 1.75,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 367,
+    "name": "rvoice_fire_cont_1",
+    "duration": 1.57,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 368,
+    "name": "rvoice_doctorneeded_2",
+    "duration": 2.27,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 369,
+    "name": "rvoice_search_sector_2",
+    "duration": 1.52,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 370,
+    "name": "rvoice_officerdown_1",
+    "duration": 1.42,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 371,
+    "name": "rvoice_officerdown_2",
+    "duration": 1.94,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 372,
+    "name": "rvoice_resolved_3",
+    "duration": 1.52,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 373,
+    "name": "rvoice_patrol_1",
+    "duration": 1.52,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 374,
+    "name": "rvoice_unable_3",
+    "duration": 1.3,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 375,
+    "name": "rvoice_opneedhelp_3",
+    "duration": 2.31,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 376,
+    "name": "rvoice_chatter_35",
+    "duration": 3.94,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 377,
+    "name": "rvoice_patrol_3",
+    "duration": 0.73,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 378,
+    "name": "rvoice_deploy_medstation",
+    "duration": 1.35,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 379,
+    "name": "rvoice_unable_2",
+    "duration": 2.02,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 380,
+    "name": "rvoice_rtb_1",
+    "duration": 1.38,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 381,
+    "name": "rvoice_chatter_17",
+    "duration": 3.22,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 382,
+    "name": "rvoice_wtf_2",
+    "duration": 2.11,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 383,
+    "name": "rvoice_unable_3",
+    "duration": 1.63,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 384,
+    "name": "PhoneLine",
+    "duration": 2.12,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 385,
+    "name": "rvoice_chatter_19",
+    "duration": 3.11,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 386,
+    "name": "rvoice_firereq_3",
+    "duration": 1.69,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 387,
+    "name": "rvoice_underfire_4",
+    "duration": 1.4,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 388,
+    "name": "rvoice_fire_cont_2",
+    "duration": 2.49,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 389,
+    "name": "rvoice_chatter_31",
+    "duration": 1.93,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 390,
+    "name": "rvoice_toomany_2",
+    "duration": 2.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 391,
+    "name": "rvoice_medreq_2",
+    "duration": 1.87,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 392,
+    "name": "rvoice_deploy_start2",
+    "duration": 1.33,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 393,
+    "name": "rvoice_search_solved_2",
+    "duration": 1.5,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 394,
+    "name": "rvoice_medreq_1",
+    "duration": 1.22,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 395,
+    "name": "rvoice_choose_1",
+    "duration": 0.83,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 396,
+    "name": "rvoice_search_solved_3",
+    "duration": 1.76,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 397,
+    "name": "rvoice_outofwater_2",
+    "duration": 1.57,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 398,
+    "name": "rvoice_choose_5",
+    "duration": 0.85,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 399,
+    "name": "rvoice_escape_3",
+    "duration": 1.49,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 400,
+    "name": "rvoice_go_5",
+    "duration": 0.99,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 401,
+    "name": "rvoice_escape_3",
+    "duration": 1.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 402,
+    "name": "rvoice_medtransport_1",
+    "duration": 1.46,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 403,
+    "name": "rvoice_go_2",
+    "duration": 1.46,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 404,
+    "name": "rvoice_cancelled_1",
+    "duration": 1.43,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 405,
+    "name": "rvoice_medtranreq_1",
+    "duration": 1.61,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 406,
+    "name": "rvoice_search_solved_3",
+    "duration": 1.51,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 407,
+    "name": "rvoice_weather_3",
+    "duration": 2.5,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 408,
+    "name": "rvoice_underfire_1",
+    "duration": 3.15,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 409,
+    "name": "rvoice_reinf_2",
+    "duration": 1.68,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 410,
+    "name": "rvoice_opneedhelp_1",
+    "duration": 1.95,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 411,
+    "name": "rvoice_go_3",
+    "duration": 1.25,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 412,
+    "name": "rvoice_go_4",
+    "duration": 0.99,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 413,
+    "name": "rvoice_outofwater_3",
+    "duration": 1.59,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 414,
+    "name": "incident_alert",
+    "duration": 0.89,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 415,
+    "name": "112_operator_management",
+    "duration": 57.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 416,
+    "name": "rvoice_reinf_3",
+    "duration": 2.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 417,
+    "name": "rvoice_go_3",
+    "duration": 0.97,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 418,
+    "name": "rvoice_unit_lost_1",
+    "duration": 1.69,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 419,
+    "name": "rvoice_medtransport_3",
+    "duration": 1.38,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 420,
+    "name": "rvoice_callall_2",
+    "duration": 2.18,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 421,
+    "name": "rvoice_medtransport_3",
+    "duration": 1.47,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 422,
+    "name": "rvoice_escape_2",
+    "duration": 3.7,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 423,
+    "name": "rvoice_fire_cont_3",
+    "duration": 2.41,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 424,
+    "name": "rvoice_chase_start_1",
+    "duration": 1.47,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 425,
+    "name": "rvoice_fire_cont_1",
+    "duration": 1.66,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 426,
+    "name": "rvoice_polreq_2",
+    "duration": 1.61,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 427,
+    "name": "rvoice_resolved_5",
+    "duration": 1.75,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 428,
+    "name": "rvoice_reinf_1",
+    "duration": 1.82,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 429,
+    "name": "rvoice_search_sector_1",
+    "duration": 1.31,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 430,
+    "name": "rvoice_outofwater_1",
+    "duration": 1.29,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 431,
+    "name": "rvoice_choose_2",
+    "duration": 1.36,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 432,
+    "name": "rvoice_patrol_2",
+    "duration": 1.48,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 433,
+    "name": "rvoice_opneedhelp_1",
+    "duration": 2.27,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 434,
+    "name": "rvoice_chatter_20",
+    "duration": 2.12,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 435,
+    "name": "rvoice_choose_1",
+    "duration": 0.85,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 436,
+    "name": "rvoice_firereq_3",
+    "duration": 1.79,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 437,
+    "name": "rvoice_cancelled_2",
+    "duration": 1.44,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 438,
+    "name": "rvoice_medreq_3",
+    "duration": 2.31,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 439,
+    "name": "rvoice_chatter_18",
+    "duration": 3.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 440,
+    "name": "rvoice_chatter_21",
+    "duration": 3.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 441,
+    "name": "rvoice_fire_cont_3",
+    "duration": 2.17,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 442,
+    "name": "rvoice_toomany_2",
+    "duration": 1.79,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 443,
+    "name": "rvoice_search_sector_1",
+    "duration": 1.51,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 444,
+    "name": "rvoice_polreq_2",
+    "duration": 1.87,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 445,
+    "name": "rvoice_escape_2",
+    "duration": 3.02,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 446,
+    "name": "rvoice_doctorneeded_3",
+    "duration": 2.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 447,
+    "name": "rvoice_deploy_polstation",
+    "duration": 2.22,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 448,
+    "name": "rvoice_medreq_3",
+    "duration": 2.48,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 449,
+    "name": "rvoice_cant_inj_3",
+    "duration": 2.62,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 450,
+    "name": "rvoice_chatter_27",
+    "duration": 5.99,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 451,
+    "name": "rvoice_toomany_1",
+    "duration": 2.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 452,
+    "name": "rvoice_search_solved_1",
+    "duration": 1.14,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 453,
+    "name": "rvoice_choose_1",
+    "duration": 0.73,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 454,
+    "name": "rvoice_underfire_3",
+    "duration": 1.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 455,
+    "name": "rvoice_opneedhelp_3",
+    "duration": 2.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 456,
+    "name": "rvoice_resolved_5",
+    "duration": 1.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 457,
+    "name": "rvoice_chatter_3",
+    "duration": 3.51,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 458,
+    "name": "rvoice_doctorneeded_2",
+    "duration": 2.15,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 459,
+    "name": "rvoice_patrol_3",
+    "duration": 1.21,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 460,
+    "name": "rvoice_unable_3",
+    "duration": 1.3,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 461,
+    "name": "rvoice_deploy_start1",
+    "duration": 1.17,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 462,
+    "name": "rvoice_underfire_2",
+    "duration": 2.03,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 463,
+    "name": "rvoice_toomany_2",
+    "duration": 1.89,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 464,
+    "name": "rvoice_reinf_1",
+    "duration": 2.12,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 465,
+    "name": "rvoice_resolved_2",
+    "duration": 1.21,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 466,
+    "name": "rvoice_unit_lost_1",
+    "duration": 1.95,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 467,
+    "name": "rvoice_unable_1",
+    "duration": 0.95,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 468,
+    "name": "rvoice_search_sector_2",
+    "duration": 1.23,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 469,
+    "name": "rvoice_attacked_1",
+    "duration": 2.27,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 470,
+    "name": "rvoice_patrol_1",
+    "duration": 1.55,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 471,
+    "name": "rvoice_rtb_1",
+    "duration": 1.49,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 472,
+    "name": "rvoice_search_sector_1",
+    "duration": 1.17,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 473,
+    "name": "rvoice_unit_lost_3",
+    "duration": 1.34,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 474,
+    "name": "rvoice_medtranreq_2",
+    "duration": 1.78,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 475,
+    "name": "rvoice_chatter_32",
+    "duration": 2.61,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 476,
+    "name": "rvoice_chatter_24",
+    "duration": 2.08,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 477,
+    "name": "rvoice_medtransport_2",
+    "duration": 1.58,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 478,
+    "name": "rvoice_polreq_1",
+    "duration": 2.02,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 479,
+    "name": "rvoice_underfire_4",
+    "duration": 1.35,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 480,
+    "name": "rvoice_medtransport_2",
+    "duration": 1.33,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 481,
+    "name": "rvoice_chatter_34",
+    "duration": 4.63,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 482,
+    "name": "rvoice_firereq_3",
+    "duration": 1.65,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 483,
+    "name": "rvoice_rtb_3",
+    "duration": 1.28,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 484,
+    "name": "rvoice_weather_2",
+    "duration": 2.67,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 485,
+    "name": "rvoice_polreq_3",
+    "duration": 1.9,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 486,
+    "name": "rvoice_reinf_2",
+    "duration": 2.2,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 487,
+    "name": "rvoice_outofwater_3",
+    "duration": 1.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 488,
+    "name": "rvoice_poltransreq_1",
+    "duration": 2.54,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 489,
+    "name": "rvoice_chatter_30",
+    "duration": 2.48,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 490,
+    "name": "rvoice_doctorneeded_2",
+    "duration": 2.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 491,
+    "name": "rvoice_cant_inj_1",
+    "duration": 2.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 492,
+    "name": "rvoice_underfire_3",
+    "duration": 1.23,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 493,
+    "name": "rvoice_weather_4",
+    "duration": 2.4,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 494,
+    "name": "rvoice_poltransreq_1",
+    "duration": 3.06,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 495,
+    "name": "rvoice_firereq_1",
+    "duration": 1.78,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 496,
+    "name": "rvoice_unable_4",
+    "duration": 1.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 497,
+    "name": "rvoice_search_solved_1",
+    "duration": 1.72,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 498,
+    "name": "rvoice_medreq_3",
+    "duration": 2.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 499,
+    "name": "rvoice_chatter_9",
+    "duration": 2.16,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 500,
+    "name": "rvoice_chatter_16",
+    "duration": 6.11,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 501,
+    "name": "rvoice_officerdown_2",
+    "duration": 1.87,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 502,
+    "name": "rvoice_reinf_2",
+    "duration": 2.14,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 503,
+    "name": "rvoice_escape_2",
+    "duration": 4.1,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 504,
+    "name": "rvoice_cant_inj_3",
+    "duration": 2.08,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 505,
+    "name": "rvoice_wtf_2",
+    "duration": 1.66,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 506,
+    "name": "rvoice_reinf_2",
+    "duration": 2.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 507,
+    "name": "rvoice_underfire_3",
+    "duration": 1.77,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 508,
+    "name": "rvoice_poltransreq_2",
+    "duration": 2.01,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 509,
+    "name": "rvoice_underfire_4",
+    "duration": 1.42,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 510,
+    "name": "rvoice_search_solved_3",
+    "duration": 1.87,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 511,
+    "name": "rvoice_toomany_1",
+    "duration": 2.27,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 512,
+    "name": "rvoice_chatter_8",
+    "duration": 3.62,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 513,
+    "name": "rvoice_officerdown_2",
+    "duration": 1.9,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 514,
+    "name": "rvoice_doctorneeded_3",
+    "duration": 2.78,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 515,
+    "name": "rvoice_chase_start_3",
+    "duration": 1.12,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 516,
+    "name": "rvoice_opneedhelp_1",
+    "duration": 1.79,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 517,
+    "name": "rvoice_choose_4",
+    "duration": 1.01,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 518,
+    "name": "rvoice_chatter_16",
+    "duration": 1.1,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 519,
+    "name": "rvoice_polreq_1",
+    "duration": 1.95,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 520,
+    "name": "rvoice_resolved_5",
+    "duration": 1.51,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 521,
+    "name": "rvoice_go_5",
+    "duration": 0.81,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 522,
+    "name": "rvoice_unable_3",
+    "duration": 1.44,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 523,
+    "name": "rvoice_stuck_2",
+    "duration": 2.13,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 524,
+    "name": "rvoice_resolved_3",
+    "duration": 1.17,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 525,
+    "name": "rvoice_search_solved_3",
+    "duration": 1.47,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 526,
+    "name": "rvoice_patrol_3",
+    "duration": 1.06,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 527,
+    "name": "rvoice_unit_lost_1",
+    "duration": 2.25,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 528,
+    "name": "rvoice_unable_1",
+    "duration": 0.92,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 529,
+    "name": "rvoice_cant_inj_2",
+    "duration": 2.81,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 530,
+    "name": "rvoice_stuck_1",
+    "duration": 1.83,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 531,
+    "name": "rvoice_toomany_3",
+    "duration": 1.75,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 532,
+    "name": "rvoice_stuck_1",
+    "duration": 1.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 533,
+    "name": "rvoice_outofwater_1",
+    "duration": 1.2,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 534,
+    "name": "rvoice_wtf_3",
+    "duration": 1.96,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 535,
+    "name": "rvoice_search_solved_2",
+    "duration": 1.18,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 536,
+    "name": "rvoice_poltransreq_3",
+    "duration": 1.68,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 537,
+    "name": "rvoice_chatter_13",
+    "duration": 2.59,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 538,
+    "name": "rvoice_weather_4",
+    "duration": 1.95,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 539,
+    "name": "rvoice_medtranreq_3",
+    "duration": 2.64,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 540,
+    "name": "rvoice_chatter_10",
+    "duration": 3.12,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 541,
+    "name": "rvoice_go_4",
+    "duration": 0.84,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 542,
+    "name": "rvoice_callall_1",
+    "duration": 2.79,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 543,
+    "name": "rvoice_chatter_4",
+    "duration": 2.87,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 544,
+    "name": "rvoice_polreq_1",
+    "duration": 1.92,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 545,
+    "name": "rvoice_chatter_22",
+    "duration": 2.48,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 546,
+    "name": "rvoice_choose_2",
+    "duration": 1.2,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 547,
+    "name": "rvoice_medtranreq_3",
+    "duration": 2.46,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 548,
+    "name": "rvoice_search_solved_1",
+    "duration": 1.38,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 549,
+    "name": "rvoice_deploy_polstation",
+    "duration": 1.79,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 550,
+    "name": "rvoice_medtransport_1",
+    "duration": 1.46,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 551,
+    "name": "rvoice_choose_1",
+    "duration": 0.82,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 552,
+    "name": "rvoice_doctorneeded_3",
+    "duration": 2.67,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 553,
+    "name": "rvoice_officerdown_3",
+    "duration": 1.88,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 554,
+    "name": "rvoice_resolved_4",
+    "duration": 1.18,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 555,
+    "name": "rvoice_officerdown_1",
+    "duration": 1.07,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 556,
+    "name": "rvoice_opneedhelp_2",
+    "duration": 1.74,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 557,
+    "name": "rvoice_deploy_medstation",
+    "duration": 1.41,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 558,
+    "name": "rvoice_unit_lost_2",
+    "duration": 1.28,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 559,
+    "name": "rvoice_attacked_2",
+    "duration": 1.97,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 560,
+    "name": "rvoice_chase_start_1",
+    "duration": 1.1,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 561,
+    "name": "rvoice_weather_2",
+    "duration": 2.74,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 562,
+    "name": "rvoice_choose_5",
+    "duration": 0.88,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 563,
+    "name": "rvoice_medtranreq_3",
+    "duration": 2.36,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 564,
+    "name": "rvoice_underfire_1",
+    "duration": 2.95,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 565,
+    "name": "rvoice_go_1",
+    "duration": 1.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 566,
+    "name": "rvoice_polreq_2",
+    "duration": 1.84,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 567,
+    "name": "rvoice_weather_3",
+    "duration": 2.48,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 568,
+    "name": "rvoice_stuck_1",
+    "duration": 1.69,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 569,
+    "name": "rvoice_weather_3",
+    "duration": 2.27,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 570,
+    "name": "rvoice_chatter_17",
+    "duration": 2.35,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 571,
+    "name": "rvoice_rtb_3",
+    "duration": 0.91,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 572,
+    "name": "rvoice_rtb_2",
+    "duration": 1.77,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 573,
+    "name": "rvoice_attacked_3",
+    "duration": 3.37,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 574,
+    "name": "rvoice_rtb_1",
+    "duration": 1.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 575,
+    "name": "rvoice_underfire_3",
+    "duration": 1.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 576,
+    "name": "rvoice_outofwater_1",
+    "duration": 1.37,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 577,
+    "name": "rvoice_medtransport_1",
+    "duration": 1.41,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 578,
+    "name": "rvoice_choose_4",
+    "duration": 0.83,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 579,
+    "name": "rvoice_resolved_5",
+    "duration": 1.68,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 580,
+    "name": "rvoice_doctorneeded_1",
+    "duration": 1.48,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 581,
+    "name": "rvoice_weather_3",
+    "duration": 2.92,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 582,
+    "name": "rvoice_search_sector_1",
+    "duration": 1.29,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 583,
+    "name": "rvoice_medreq_1",
+    "duration": 1.7,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 584,
+    "name": "rvoice_toomany_1",
+    "duration": 2.25,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 585,
+    "name": "rvoice_unit_lost_3",
+    "duration": 1.51,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 586,
+    "name": "rvoice_reinf_1",
+    "duration": 1.87,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 587,
+    "name": "rvoice_outofwater_3",
+    "duration": 1.52,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 588,
+    "name": "rvoice_fire_cont_2",
+    "duration": 2.02,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 589,
+    "name": "rvoice_fire_cont_3",
+    "duration": 2.61,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 590,
+    "name": "rvoice_chatter_6",
+    "duration": 2.38,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 591,
+    "name": "rvoice_unit_lost_2",
+    "duration": 1.34,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 592,
+    "name": "rvoice_outofwater_2",
+    "duration": 1.59,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 593,
+    "name": "rvoice_stuck_2",
+    "duration": 2.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 594,
+    "name": "rvoice_doctorneeded_1",
+    "duration": 1.34,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 595,
+    "name": "rvoice_toomany_3",
+    "duration": 1.62,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 596,
+    "name": "rvoice_weather_1",
+    "duration": 2.02,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 597,
+    "name": "rvoice_wtf_3",
+    "duration": 1.57,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 598,
+    "name": "rvoice_medtransport_3",
+    "duration": 1.39,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 599,
+    "name": "rvoice_chatter_20",
+    "duration": 1.81,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 600,
+    "name": "rvoice_cant_inj_2",
+    "duration": 2.5,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 601,
+    "name": "rvoice_polreq_3",
+    "duration": 2.16,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 602,
+    "name": "rvoice_resolved_3",
+    "duration": 1.3,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 603,
+    "name": "rvoice_firereq_1",
+    "duration": 1.59,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 604,
+    "name": "rvoice_choose_2",
+    "duration": 1.15,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 605,
+    "name": "rvoice_chase_start_1",
+    "duration": 1.48,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 606,
+    "name": "rvoice_reinf_3",
+    "duration": 2.78,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 607,
+    "name": "rvoice_search_solved_2",
+    "duration": 1.49,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 608,
+    "name": "rvoice_opneedhelp_2",
+    "duration": 1.84,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 609,
+    "name": "rvoice_choose_2",
+    "duration": 1.35,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 610,
+    "name": "rvoice_underfire_2",
+    "duration": 1.88,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 611,
+    "name": "rvoice_reinf_3",
+    "duration": 2.63,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 612,
+    "name": "rvoice_choose_5",
+    "duration": 0.84,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 613,
+    "name": "rvoice_wtf_1",
+    "duration": 2.68,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 614,
+    "name": "rvoice_toomany_2",
+    "duration": 1.92,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 615,
+    "name": "rvoice_search_sector_3",
+    "duration": 1.32,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 616,
+    "name": "rvoice_resolved_1",
+    "duration": 1.2,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 617,
+    "name": "rvoice_medtranreq_1",
+    "duration": 1.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 618,
+    "name": "rvoice_resolved_3",
+    "duration": 1.68,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 619,
+    "name": "rvoice_chatter_5",
+    "duration": 2.39,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 620,
+    "name": "rvoice_rtb_3",
+    "duration": 1.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 621,
+    "name": "rvoice_resolved_1",
+    "duration": 1.28,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 622,
+    "name": "rvoice_go_5",
+    "duration": 0.98,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 623,
+    "name": "rvoice_poltransreq_1",
+    "duration": 2.63,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 624,
+    "name": "rvoice_resolved_2",
+    "duration": 1.12,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 625,
+    "name": "rvoice_unable_4",
+    "duration": 2.02,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 626,
+    "name": "rvoice_weather_1",
+    "duration": 2.38,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 627,
+    "name": "rvoice_resolved_2",
+    "duration": 1.0,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 628,
+    "name": "rvoice_escape_1",
+    "duration": 2.29,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 629,
+    "name": "rvoice_deploy_firestation",
+    "duration": 1.54,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 630,
+    "name": "rvoice_unable_2",
+    "duration": 1.81,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 631,
+    "name": "rvoice_weather_2",
+    "duration": 2.51,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 632,
+    "name": "rvoice_wtf_1",
+    "duration": 1.97,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 633,
+    "name": "rvoice_search_sector_3",
+    "duration": 1.43,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 634,
+    "name": "rvoice_poltransreq_3",
+    "duration": 1.53,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 635,
+    "name": "rvoice_cant_inj_1",
+    "duration": 2.96,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 636,
+    "name": "rvoice_weather_4",
+    "duration": 2.43,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 637,
+    "name": "rvoice_medtransport_2",
+    "duration": 1.54,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 638,
+    "name": "rvoice_wtf_1",
+    "duration": 3.25,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 639,
+    "name": "rvoice_rtb_1",
+    "duration": 1.44,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 640,
+    "name": "rvoice_chase_start_3",
+    "duration": 1.36,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 641,
+    "name": "rvoice_chatter_21",
+    "duration": 3.24,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 642,
+    "name": "rvoice_go_3",
+    "duration": 0.84,
+    "freq": 48000,
+    "channels": 2
+  },
+  {
+    "path_id": 643,
+    "name": "rvoice_medreq_2",
+    "duration": 1.89,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 644,
+    "name": "rvoice_firereq_1",
+    "duration": 1.72,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 645,
+    "name": "rvoice_medtranreq_1",
+    "duration": 1.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 646,
+    "name": "rvoice_resolved_4",
+    "duration": 1.08,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 647,
+    "name": "rvoice_reinf_1",
+    "duration": 2.43,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 648,
+    "name": "rvoice_cant_inj_2",
+    "duration": 2.73,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 649,
+    "name": "rvoice_medreq_2",
+    "duration": 1.9,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 650,
+    "name": "rvoice_cant_inj_1",
+    "duration": 2.99,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 651,
+    "name": "rvoice_search_sector_3",
+    "duration": 1.6,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 652,
+    "name": "rvoice_medtranreq_1",
+    "duration": 1.63,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 653,
+    "name": "rvoice_go_4",
+    "duration": 0.8,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 654,
+    "name": "rvoice_attacked_2",
+    "duration": 1.89,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 655,
+    "name": "rvoice_go_3",
+    "duration": 1.29,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 656,
+    "name": "rvoice_opneedhelp_2",
+    "duration": 1.63,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 657,
+    "name": "rvoice_deploy_start1",
+    "duration": 1.22,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 658,
+    "name": "rvoice_wtf_3",
+    "duration": 1.94,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 659,
+    "name": "rvoice_go_5",
+    "duration": 0.96,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 660,
+    "name": "rvoice_officerdown_3",
+    "duration": 1.8,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 661,
+    "name": "rvoice_officerdown_1",
+    "duration": 1.34,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 662,
+    "name": "rvoice_weather_2",
+    "duration": 2.08,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 663,
+    "name": "rvoice_doctorneeded_1",
+    "duration": 1.42,
+    "freq": 44100,
+    "channels": 2
+  },
+  {
+    "path_id": 664,
+    "name": "rvoice_resolved_2",
+    "duration": 1.0,
+    "freq": 44100,
+    "channels": 2
+  }
+]
