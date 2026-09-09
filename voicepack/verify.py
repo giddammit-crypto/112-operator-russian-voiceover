@@ -75,8 +75,12 @@ def verify_pack(out_root: str, game_dir: str | None = None) -> bool:
     print("\n1. Переговоры по рации")
     all_stats = []
     if not os.path.isdir(radio_root):
-        problems.append(f"Отсутствует каталог рации: {radio_root}")
-        print("   [!] Каталог не найден")
+        if os.path.isdir(calls_root):
+            warnings.append("Каталог рации отсутствует — проверяется сборка только звонков 112")
+            print("   [~] Каталог не найден (calls-only сборка)")
+        else:
+            problems.append(f"Отсутствует каталог рации: {radio_root}")
+            print("   [!] Каталог не найден")
     else:
         for role in ROLES:
             d = os.path.join(radio_root, role)
@@ -168,7 +172,12 @@ def verify_pack(out_root: str, game_dir: str | None = None) -> bool:
                                 "это не релизное качество речи, "
                                 "пересоберите с --backend edge/piper/silero")
         else:
-            warnings.append(f"Нет манифеста {name}")
+            if name == "russian_radio_manifest.json" and os.path.isdir(calls_root):
+                warnings.append("Нет манифеста рации — сборка только звонков 112")
+            elif name == "russian_calls_manifest.json" and os.path.isdir(radio_root):
+                warnings.append("Нет манифеста звонков — сборка только рации")
+            else:
+                warnings.append(f"Нет манифеста {name}")
 
     # --- 5. Интеграция с игрой
     if game_dir:

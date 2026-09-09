@@ -7,6 +7,7 @@
 #
 # Переменные окружения:
 #   BACKEND=edge|piper|silero|espeak|stub   движок синтеза речи (по умолчанию auto)
+#   SCOPE=calls|all|radio                   что собирать (по умолчанию calls — только звонки 112)
 #   JOBS=4                                  число параллельных процессов
 #   SKIP_AUDIO=1                            не пересобирать аудио
 #   SKIP_BUILD=1                            не собирать C#-сборку мода
@@ -15,6 +16,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BACKEND="${BACKEND:-auto}"
+SCOPE="${SCOPE:-calls}"
 JOBS="${JOBS:-}"
 
 echo "=========================================================="
@@ -74,11 +76,15 @@ GAME_DATA="$GAME_DIR/Operator 112_Data"
 BUILD_DIR="$SCRIPT_DIR/build"
 if [ "${SKIP_AUDIO:-0}" != "1" ]; then
     echo ""
-    echo "[*] Генерация озвучки (движок: $BACKEND)..."
+    case "$SCOPE" in
+        calls|all|radio) ;;
+        *) echo "Ошибка: SCOPE должен быть calls, all или radio (сейчас: $SCOPE)"; exit 1 ;;
+    esac
+    echo "[*] Генерация озвучки: $SCOPE (движок: $BACKEND)..."
     JOBS_ARG=()
     [ -n "$JOBS" ] && JOBS_ARG=(--jobs "$JOBS")
 
-    ( cd "$SCRIPT_DIR" && "$PYTHON_CMD" -m voicepack all \
+    ( cd "$SCRIPT_DIR" && "$PYTHON_CMD" -m voicepack "$SCOPE" \
         --out "$BUILD_DIR" \
         --game "$GAME_DIR" \
         --backend "$BACKEND" \

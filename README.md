@@ -77,10 +77,19 @@
 
 ### Быстрый способ (Linux / Steam Deck / Proton)
 
+По умолчанию установщик теперь пересобирает **только звонки 112** — рацию экипажей
+не трогает, если она у вас уже звучит нормально:
+
 ```bash
 git clone https://github.com/giddammit-crypto/112-operator-russian-voiceover.git
 cd 112-operator-russian-voiceover
 ./install.sh
+```
+
+Если всё же нужна полная пересборка вместе с рацией:
+
+```bash
+SCOPE=all ./install.sh
 ```
 
 Если игра установлена нестандартно — укажите путь:
