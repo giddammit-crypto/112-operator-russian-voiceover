@@ -17,7 +17,8 @@ extracted_samples/
 audio_test/
 cinema_test/
 *.mp3
-test_*
+# (правило test_* убрано: оно скрывало tests/test_voicepack.py)
+audio_test_*/
 *.log
 *.original
 
@@ -26,3 +27,10 @@ test_*
 .idea/
 .vscode/
 *.zip
+
+# Собранный аудиопак
+build/
+RussianRadio/
+RussianCalls/
+*.wav.bak
+russian_*_manifest.json
