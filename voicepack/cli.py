@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 
@@ -31,13 +32,27 @@ from .tts import select_backend
 DEFAULT_GAME_DIRS = [
     os.path.expanduser("~/.steam/steam/steamapps/common/112 Operator"),
     os.path.expanduser("~/.local/share/Steam/steamapps/common/112 Operator"),
+    os.path.expanduser("~/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/common/112 Operator"),
     os.path.expanduser("~/Library/Application Support/Steam/steamapps/common/112 Operator"),
     "C:/Program Files (x86)/Steam/steamapps/common/112 Operator",
+    "/home/astra/vint2/gamez/steamapps/common/112 Operator",
 ]
 
 
 def find_game(explicit: str | None) -> str | None:
-    cands = ([explicit] if explicit else []) + DEFAULT_GAME_DIRS
+    cands = ([explicit] if explicit else []) + list(DEFAULT_GAME_DIRS)
+    for vdf in (
+        os.path.expanduser("~/.steam/steam/steamapps/libraryfolders.vdf"),
+        os.path.expanduser("~/.local/share/Steam/steamapps/libraryfolders.vdf"),
+        os.path.expanduser("~/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/libraryfolders.vdf"),
+    ):
+        if os.path.isfile(vdf):
+            try:
+                with open(vdf, "r", encoding="utf-8", errors="ignore") as f:
+                    for m in re.finditer(r'"path"\s+"([^"]+)"', f.read()):
+                        cands.append(os.path.join(m.group(1), "steamapps", "common", "112 Operator"))
+            except Exception:
+                pass
     for c in cands:
         if c and os.path.isdir(os.path.join(c, "Operator 112_Data")):
             return c

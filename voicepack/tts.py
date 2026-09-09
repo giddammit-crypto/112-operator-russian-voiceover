@@ -80,6 +80,8 @@ class EdgeBackend(Backend):
         # Проверяем реальную сетевую доступность сервиса
         async def probe():
             try:
+                loop = asyncio.get_running_loop()
+                loop.set_exception_handler(lambda _loop, _ctx: None)
                 comm = mod.Communicate(text="проверка связи", voice="ru-RU-DmitryNeural")
                 async for chunk in comm.stream():
                     if chunk["type"] == "audio":
@@ -112,6 +114,8 @@ class EdgeBackend(Backend):
         tmp.close()
 
         async def run():
+            loop = asyncio.get_running_loop()
+            loop.set_exception_handler(lambda _loop, _ctx: None)
             comm = mod.Communicate(
                 text=text,
                 voice=voice,

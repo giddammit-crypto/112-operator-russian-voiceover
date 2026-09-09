@@ -21,22 +21,45 @@ echo "=========================================================="
 echo " 112 Operator — Русская кинематографическая озвучка"
 echo "=========================================================="
 
-# --- 1. Поиск игры -------------------------------------------------------
-CANDIDATE_DIRS=(
-    "${1:-}"
-    "$HOME/.steam/steam/steamapps/common/112 Operator"
-    "$HOME/.local/share/Steam/steamapps/common/112 Operator"
-    "$HOME/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/common/112 Operator"
-    "/mnt/steam/steamapps/common/112 Operator"
-)
+# --- 1. Проверка Python --------------------------------------------------
+PYTHON_CMD="python3"
+if [ -x "$SCRIPT_DIR/.venv/bin/python3" ]; then
+    PYTHON_CMD="$SCRIPT_DIR/.venv/bin/python3"
+fi
 
+if ! "$PYTHON_CMD" -c "import sys; assert sys.version_info >= (3, 8)" >/dev/null 2>&1; then
+    echo "Ошибка: требуется Python 3.8 или новее."
+    exit 1
+fi
+echo "[+] Python: $("$PYTHON_CMD" --version) ($PYTHON_CMD)"
+
+# --- 2. Поиск игры -------------------------------------------------------
 GAME_DIR=""
-for d in "${CANDIDATE_DIRS[@]}"; do
-    if [ -n "$d" ] && [ -d "$d/Operator 112_Data" ]; then
-        GAME_DIR="$d"
-        break
+if [ -n "${1:-}" ] && [ -d "${1}/Operator 112_Data" ]; then
+    GAME_DIR="${1}"
+else
+    DETECTED=$("$PYTHON_CMD" -c "import sys; sys.path.insert(0, '$SCRIPT_DIR'); from voicepack.cli import find_game; print(find_game(None) or '')" 2>/dev/null || true)
+    if [ -n "$DETECTED" ] && [ -d "$DETECTED/Operator 112_Data" ]; then
+        GAME_DIR="$DETECTED"
     fi
-done
+fi
+
+if [ -z "$GAME_DIR" ]; then
+    CANDIDATE_DIRS=(
+        "${1:-}"
+        "$HOME/.steam/steam/steamapps/common/112 Operator"
+        "$HOME/.local/share/Steam/steamapps/common/112 Operator"
+        "$HOME/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/common/112 Operator"
+        "/mnt/steam/steamapps/common/112 Operator"
+        "/home/astra/vint2/gamez/steamapps/common/112 Operator"
+    )
+    for d in "${CANDIDATE_DIRS[@]}"; do
+        if [ -n "$d" ] && [ -d "$d/Operator 112_Data" ]; then
+            GAME_DIR="$d"
+            break
+        fi
+    done
+fi
 
 if [ -z "$GAME_DIR" ]; then
     echo "Ошибка: каталог игры '112 Operator' не найден."
@@ -47,13 +70,6 @@ fi
 echo "[+] Игра найдена: $GAME_DIR"
 GAME_DATA="$GAME_DIR/Operator 112_Data"
 
-# --- 2. Проверка Python --------------------------------------------------
-if ! command -v python3 >/dev/null 2>&1; then
-    echo "Ошибка: требуется Python 3.8 или новее."
-    exit 1
-fi
-echo "[+] Python: $(python3 --version)"
-
 # --- 3. Сборка аудио -----------------------------------------------------
 BUILD_DIR="$SCRIPT_DIR/build"
 if [ "${SKIP_AUDIO:-0}" != "1" ]; then
@@ -62,7 +78,7 @@ if [ "${SKIP_AUDIO:-0}" != "1" ]; then
     JOBS_ARG=()
     [ -n "$JOBS" ] && JOBS_ARG=(--jobs "$JOBS")
 
-    ( cd "$SCRIPT_DIR" && python3 -m voicepack all \
+    ( cd "$SCRIPT_DIR" && "$PYTHON_CMD" -m voicepack all \
         --out "$BUILD_DIR" \
         --game "$GAME_DIR" \
         --backend "$BACKEND" \
@@ -98,11 +114,11 @@ fi
 # --- 5. Установка --------------------------------------------------------
 echo ""
 echo "[*] Установка пака в игру..."
-( cd "$SCRIPT_DIR" && python3 -m voicepack install --out "$BUILD_DIR" --game "$GAME_DIR" )
+( cd "$SCRIPT_DIR" && "$PYTHON_CMD" -m voicepack install --out "$BUILD_DIR" --game "$GAME_DIR" )
 
 # --- 6. Проверка ---------------------------------------------------------
 echo ""
-( cd "$SCRIPT_DIR" && python3 -m voicepack verify --out "$BUILD_DIR" --game "$GAME_DIR" )
+( cd "$SCRIPT_DIR" && "$PYTHON_CMD" -m voicepack verify --out "$BUILD_DIR" --game "$GAME_DIR" )
 
 echo ""
 echo "=========================================================="
